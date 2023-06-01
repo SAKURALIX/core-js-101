@@ -127,13 +127,7 @@ function repeatString(value, count) {
  *   'ABABAB','BA' => 'ABAB'
  */
 function removeFirstOccurrences(str, value) {
-  const beginningIndex = str.indexOf('not');
-  const endIndex = beginningIndex + value.length;
-  const startStr = str.slice(0, beginningIndex);
-  const endStr = str.slice(endIndex);
-  const newStr = startStr + endStr;
-  console.log(newStr);
-  return newStr;
+  return str.replace(value, '');
 }
 
 /**
